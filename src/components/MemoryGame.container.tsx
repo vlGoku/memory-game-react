@@ -29,6 +29,7 @@ export default function MemoryGameContainer() {
       const myImgData = allPokemon.forEach(async (pokemon: IPokemon) => {
         const res = await fetch(`${pokemon.url}`);
         const poke = await res.json();
+        
         //setAllPokemonIMG((prev) => [...prev, poke.sprites.front_default]);
         setAllPokemonIMG(poke.results);
       });
