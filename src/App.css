@@ -1,9 +1,44 @@
-.pokemonCard {
+* {
+  align-items: center;
+  height: auto;
+}
+
+.cardHolder {
   border: 1px solid black;
   width: 25%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: peachpuff;
+}
+
+.pokemonName {
+  font-size: 2em;
+  text-align: center;
 }
 
 .container {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  text-align: center;
+}
+
+.scoreboard {
+  text-align: center;
+  color: peachpuff;
+}
+
+.pokemonImg {
+  height: 50%;
+  width: 50%;
+}
+
+.gameContainer {
+  background-color: grey !important;
 }

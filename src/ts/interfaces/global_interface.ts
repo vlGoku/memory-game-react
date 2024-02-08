@@ -8,4 +8,7 @@ export interface IPokemonAllData {
   id: number;
   url: string;
   image: string;
+  sprites: {
+    front_default: string;
+  };
 }
