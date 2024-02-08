@@ -28,7 +28,7 @@ export default function MemoryGameContainer({ onCounterUpdate }: Props) {
 
   useEffect(() => {
     if (allPokemon.length > 0) {
-      const myImgData = allPokemon.forEach(async (pokemon: IPokemon) => {
+      allPokemon.forEach(async (pokemon: IPokemon) => {
         const res = await fetch(`${pokemon.url}`);
         const poke = await res.json();
         setAllPokemonIMG((prev) => [...prev, poke]);
