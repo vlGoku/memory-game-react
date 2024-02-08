@@ -1,6 +1,8 @@
 * {
   align-items: center;
-  height: auto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .cardHolder {
@@ -40,5 +42,5 @@
 }
 
 .gameContainer {
-  background-color: grey !important;
+  background-color: grey;
 }

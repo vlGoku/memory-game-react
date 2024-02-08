@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "@picocss/pico";
 import "./App.css";
-import MemoryGame from "./components/MemoryGame";
 import MemoryGameContainer from "./components/MemoryGame.container";
 
 function App() {
@@ -11,7 +10,7 @@ function App() {
   const updateClickCount = (newCount: number) => {
     setClickCount(newCount);
 
-    if (newCount > bestScore) {
+    if (clickCount > bestScore) {
       setBestScore(newCount);
     }
   };
